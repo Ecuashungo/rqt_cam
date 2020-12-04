@@ -56,9 +56,8 @@ namespace rqt_cam{
     Y12data:         1st 12 bits                                       2nd 12 bits
     |<--------------------------------------------->|<--------------------------------------------->|
     | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D | D |
-    |<----------------------------->|<------------->|<----------------------------->|<------------->|
-    Y8data:   1st 8byte              we will skip 		2nd byte              we will skip
-				     this nibble                                        this nibble                        
+    |<----------------------------->|<----------------------------->|<----------------------------->|
+    Y8data:   1st 8byte                       2nd byte                  we will skip this byte
 
 */
       int h,w,byte = 0;

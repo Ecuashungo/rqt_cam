@@ -296,13 +296,13 @@ namespace ecam_v4l2
   void Devices::prepare_topic(std::string *productName)
   {
     std::replace( productName->begin(), productName->end(), ' ', '_');
+    std::replace( productName->begin(), productName->end(), '.', '_');
     std::replace( productName->begin(), productName->end(), ':', '_');
     std::replace( productName->begin(), productName->end(), '\'', '_');
     std::replace( productName->begin(), productName->end(), '-', '_');
     std::replace( productName->begin(), productName->end(), ',', '_');
     std::replace( productName->begin(), productName->end(), '(', '_');
     std::replace( productName->begin(), productName->end(), ')', '_');
-    std::replace( productName->begin(), productName->end(), '.', '_');
   }
 
   /*****************************************************************************
